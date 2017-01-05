@@ -71,10 +71,10 @@ class ViewController: UIViewController {
     //スタートボタン
     @IBAction func start(_ sender: Any) {
     
-        timer = Timer.scheduledTimer(timeInterval: 2, target:self, selector:#selector(timercount), userInfo: nil, repeats: true)
+     if timer.isValid == false {    timer = Timer.scheduledTimer(timeInterval: 2, target:self, selector:#selector(timercount), userInfo: nil, repeats: true)
         
     }
-    
+    }
     
     
     //ストップボタン
